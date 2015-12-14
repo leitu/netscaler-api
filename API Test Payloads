@@ -1,0 +1,123 @@
+#Test Payloads
+
+Create LBvserver
+{
+    "task_id": "3b7727d6-3833-4dcc-8fe5-d85f12d1eadb",
+    "creation_time": "YYYY/MM/DD-HH:MM:SS",
+    "user": "foo",
+    "loadbalance": "lb1-1-tr1.mhint",
+    "action": "Create",
+    "object": "lbvserver",
+    "arguments": {
+        "vip": "192.168.2.1"
+        "clientid": "123456",
+        "appservers": ["10.10.3.1","10.10.3.3"]
+    }
+}
+
+Delete LBvserver
+{
+    "task_id": "3b7727d6-3833-4dcc-8fe5-d85f12d1eadb",
+    "creation_time": "YYYY/MM/DD-HH:MM:SS",
+    "user": "foo",
+    "loadbalance": "trcl1va2cm.mhint",
+    "action": "Delete",
+    "object": "lbvserver",
+    "arguments": {
+        "vip": "192.168.2.1"
+    }
+}
+
+Disable LBvserver
+{
+    "task_id": "3b7727d6-3833-4dcc-8fe5-d85f12d1eadb",
+    "creation_time": "YYYY/MM/DD-HH:MM:SS",
+    "user": "foo",
+    "loadbalance": "trcl1va2cm.mhint",
+    "action": "Disable",
+    "object": "lbvserver",
+    "arguments": {
+        "vip": "192.168.2.1"
+    }
+}
+
+Create server
+{
+    "task_id": "3b7727d6-3833-4dcc-8fe5-d85f12d1eadb",
+    "creation_time": "YYYY/MM/DD-HH:MM:SS",
+    "user": "foo",
+    "loadbalance": "lb1-1-tr1.mhint",
+    "action": "Create",
+    "object": "appserver",
+    "arguments": {
+        "appservers": ["10.10.3.2"]
+    }
+}
+
+Delete server
+{
+    "task_id": "3b7727d6-3833-4dcc-8fe5-d85f12d1eadb",
+    "creation_time": "YYYY/MM/DD-HH:MM:SS",
+    "user": "foo",
+    "loadbalance": "trcl1va2cm.mhint",
+    "action": "Delete",
+    "object": "appserver",
+    "arguments": {
+        "appservers": ["10.10.3.2"]
+    }
+}
+
+Disable server
+{
+    "task_id": "3b7727d6-3833-4dcc-8fe5-d85f12d1eadb",
+    "creation_time": "YYYY/MM/DD-HH:MM:SS",
+    "user": "foo",
+    "loadbalance": "trcl1va2cm.mhint",
+    "action": "Disable",
+    "object": "appserver",
+    "arguments": {
+        "appservers": ["10.10.3.2"]
+    }
+}
+
+Create service
+{
+    "task_id": "3b7727d6-3833-4dcc-8fe5-d85f12d1eadb",
+    "creation_time": "YYYY/MM/DD-HH:MM:SS",
+    "user": "foo",
+    "loadbalance": "lb1-1-tr1.mhint",
+    "action": "Create",
+    "object": "service",
+    "arguments": {
+        "appservers": ["10.10.3.2"]
+    }
+}
+
+Delete service
+{
+    "task_id": "3b7727d6-3833-4dcc-8fe5-d85f12d1eadb",
+    "creation_time": "YYYY/MM/DD-HH:MM:SS",
+    "user": "foo",
+    "loadbalance": "trcl1va2cm.mhint",
+    "action": "Delete",
+    "object": "service",
+    "arguments": {
+        "appservers": ["10.10.3.2"]
+    }
+}
+
+Disable service
+{
+    "task_id": "3b7727d6-3833-4dcc-8fe5-d85f12d1eadb",
+    "creation_time": "YYYY/MM/DD-HH:MM:SS",
+    "user": "foo",
+    "loadbalance": "trcl1va2cm.mhint",
+    "action": "Disable",
+    "object": "service",
+    "arguments": {
+        "appservers": ["10.10.3.2"]
+    }
+}
+
+
+
