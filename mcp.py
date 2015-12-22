@@ -1,7 +1,7 @@
-#!/usr/bin/env python -B
+#!/usr/bin/env python
 
 import sys, logging.config, json, Queue, logging, time, argparse
-from lib import daemon, worker, mcp_config_options
+import daemon, mcp_config_options, worker
 
 LOGGER = logging.getLogger("MCP")
 

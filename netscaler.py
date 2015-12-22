@@ -2,8 +2,8 @@
 __author__ = "atu"
 __version__ = "0.0.1"
 
-from lib.nsnitro.nsresources import *
-from lib import config
+from nsnitro.nsresources import *
+import config
 
 
 import base64
