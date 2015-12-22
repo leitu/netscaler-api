@@ -5,14 +5,13 @@ __version__ = "0.0.1"
 from lib.nsnitro.nsresources import *
 from lib import config
 
+
 import base64
-import random
 import re
 import logging
 import logging.config
 import os
 import json
-import xmltodict
 import unittest
 
 
@@ -27,13 +26,13 @@ logging.config.dictConfig(loggingconfig)
 
 
 class Load(object):
-	def __init__(self, params):
-		self.params = params
-		self.loadbalance = self.params.get('loadbalance')
-		apiconn = Connect(self.loadbalance)
-		self.conn = apiconn.ns_connect()
+    def __init__(self, params):
+        self.params = params
+        self.loadbalance = self.params.get('loadbalance')
+        apiconn = Connect(self.loadbalance)
+        self.conn = apiconn.ns_connect()
 
-	def execute_method(self, params, actions):
+    def execute_method(self, params, actions):
         '''
         Used to select which method to run from a dict
         @type action: str
